@@ -246,10 +246,8 @@ section#about {
 .about .row .content .box-container .box p span{
     color:var(--green);
 }
-
-.sec-heigh{
+section{
     margin-bottom: 70px;
-
 }
 
 .services .box-container{
