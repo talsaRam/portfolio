@@ -189,7 +189,7 @@ section#about {
 .about .row{
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap:3rem;
     align-items: center;
 }
 
@@ -236,6 +236,13 @@ section#about {
     flex:1 0 300px;
 }
 
+.about .row .content .box-container .box p a {
+    text-decoration: underline;
+    color: #222;
+}
+.about .row .content .box-container .box p a:hover {
+    color: #27ae60;
+}
 .about .row .content .box-container .box p{
     font-size: 1.7rem;
     color:#222;
