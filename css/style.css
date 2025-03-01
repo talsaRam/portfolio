@@ -14,6 +14,13 @@
     transition: all .2s linear;
 }
 
+.container {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -35,11 +42,6 @@ html::-webkit-scrollbar-thumb{
 body{
     background:#eee;
     padding-right: 5rem;
-}
-
-section{
-    padding:2rem 9%;
-    min-height: 100vh;
 }
 
 .heading{
@@ -132,6 +134,8 @@ header .navbar a:hover{
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 100vh;
+    margin-bottom: 70px;
 }
 
 .home #particles-js{
@@ -179,7 +183,9 @@ header .navbar a:hover{
     font-size: 2.5rem;
     line-height: 2;
 }
-
+section#about {
+    margin-bottom: 100px;
+}
 .about .row{
     display: flex;
     flex-wrap: wrap;
@@ -227,7 +233,7 @@ header .navbar a:hover{
 }
 
 .about .row .content .box-container .box{
-    flex:1 1 20rem;
+    flex:1 0 300px;
 }
 
 .about .row .content .box-container .box p{
@@ -242,7 +248,8 @@ header .navbar a:hover{
 }
 
 .sec-heigh{
-   min-height: 80vh !important;
+    margin-bottom: 70px;
+
 }
 
 .services .box-container{
@@ -448,9 +455,7 @@ header .navbar a:hover{
         padding-right: 0;
     }
     
-    section{
-        padding:2rem;
-    }
+    section{}
 
     header{
         width:100%;
