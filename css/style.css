@@ -239,6 +239,7 @@ section#about {
 .about .row .content .box-container .box p a {
     text-decoration: underline;
     color: #222;
+    text-transform: lowercase;
 }
 .about .row .content .box-container .box p a:hover {
     color: #27ae60;
