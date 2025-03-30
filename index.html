@@ -245,24 +245,25 @@
           <div class="image">
             <img class="tilt" src="images/contact-img.svg" alt="" />
           </div>
-
-          <form action="">
+              <form action="https://api.web3forms.com/submit" method="POST">
             <div class="inputBox">
-              <input type="text" placeholder="name" required />
-              <input type="email" placeholder="email" required />
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="3c2d7552-a47e-4134-977b-1f19f2a773b1">
+                      
+              <!-- Form Inputs. Each input must have a name="" attribute -->
+              <input type="text" name="name" placeholder="First Name" required>
+              <input type="text" name="name" placeholder="Last Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="number" name="number" placeholder="Phone Number" min="1" max="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+              <textarea name="message" required></textarea>
             </div>
-
-            <input type="text" placeholder="subject" class="box" required />
-
-            <textarea
-              placeholder="message"
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input type="submit" class="btn" value="send message" />
-          </form>
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+      
+            <input type="submit" class="btn" value="send message">
         </div>
       </div>
     </section>
